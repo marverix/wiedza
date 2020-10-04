@@ -50,3 +50,11 @@ Zrób screena całego ekranu (wszystkich monitorów na raz)
 ```sh
 flameshot full --path /home/marverix/Pulpit
 ```
+
+## Fre:ac
+
+Chyba najlepszy program na Linuxa do ripowania Audio CD. Dużo opcji, dekoderów, koderów, itp
+
+```sh
+sudo snap install freac --beta
+```
