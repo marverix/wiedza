@@ -76,3 +76,11 @@ Link: https://unix.stackexchange.com/questions/118217/chmod-silent-mode-how-forc
 ```bash
 echo -ne "\033]0;tutaj wstaw tytul\007"
 ```
+
+### Listowanie plików jako Array
+
+```bash
+ls | jq -R -s -c 'split("\n")[:-1]'
+```
+
+Link: https://stackoverflow.com/a/32354503
