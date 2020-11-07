@@ -13,6 +13,12 @@ done
 echo "OK"
 ```
 
+### Czekaj aż port jest otwarty
+
+```sh
+bash -c 'while ! nc -z 127.0.0.1 8001 ; do sleep 1 ; done'
+```
+
 ### Czekaj na unlock apt
 
 ```bash
