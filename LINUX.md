@@ -90,3 +90,26 @@ ls | jq -R -s -c 'split("\n")[:-1]'
 ```
 
 Link: https://stackoverflow.com/a/32354503
+
+
+## Zarządzanie sprzętem
+
+### Secure Erase Disk
+
+1. Sprawdź czy dysk nie jest w stanie _frozen_. Jeżeli tak to reboot, albo uśpij i obódź kompa:
+
+    ```sh
+    sudo hdparm -I /dev/sdX | grep frozen
+    ```
+
+1. Ustaw hasło
+
+    ```sh
+    sudo hdparm --user-master u --security-set-pass NULL /dev/sdX
+    ```
+
+1. Rozpocznij (UWAGA: NIE MOŻNA TEGO ZATRZYMAĆ! ODŁĄCZENIE ZASILANIA === BRICK DYSKU!!!)
+
+    ```sh
+    sudo hdparm --user-master u --security-erase-enhanced NULL /dev/sdX
+    ```
