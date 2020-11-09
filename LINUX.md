@@ -94,6 +94,18 @@ Link: https://stackoverflow.com/a/32354503
 
 ## Zarządzanie sprzętem
 
+### Sprawdzanie bad-sectorów
+
+```sh
+sudo badblocks -v /dev/sdaX
+```
+
+### Dobre GUI do dysków
+
+```sh
+sudo apt install gnome-disk-utility
+```
+
 ### Secure Erase Disk
 
 1. Sprawdź czy dysk nie jest w stanie _frozen_. Jeżeli tak to reboot, albo uśpij i obódź kompa:
