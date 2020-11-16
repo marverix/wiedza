@@ -1,6 +1,8 @@
 # Przydatne programy
 
-## Google Chrome - bez Snapa
+## Internety
+
+### Google Chrome - bez Snapa
 
 ```sh
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -9,7 +11,9 @@ sudo apt-get update
 sudo apt-get install google-chrome-stable # (albo -beta)
 ```
 
-## Ungoogled Chromium
+### Ungoogled Chromium
+
+Wersja Chromium z wyciętymi wszystkimi rzeczami związanymi z Google.
 
 ```sh
 echo 'deb http://download.opensuse.org/repositories/home:/ungoogled_chromium/Ubuntu_Focal/ /' | sudo tee /etc/apt/sources.list.d/home-ungoogled_chromium.list > /dev/null
@@ -21,9 +25,13 @@ sudo apt install -y ungoogled-chromium ungoogled-chromium-driver
 ln -s /usr/bin/chromium /usr/bin/chromium-browser || true
 ```
 
-## Flameshot
+## Grafika
 
-### Instalacja
+### Flameshot
+
+Bardzo fajny program do robienia screenshotów i rysowania na nich
+
+#### Instalacja
 
 https://flameshot.js.org/#/getting-start
 
@@ -31,7 +39,7 @@ https://flameshot.js.org/#/getting-start
 sudo apt install flameshot
 ```
 
-### Komendy
+#### Komendy
 
 Otwórz narzędzie do zaznaczania
 
@@ -51,7 +59,9 @@ Zrób screena całego ekranu (wszystkich monitorów na raz)
 flameshot full --path /home/marverix/Pulpit
 ```
 
-## Fre:ac
+## Multimedia
+
+### Fre:ac
 
 Chyba najlepszy program na Linuxa do ripowania Audio CD. Dużo opcji, dekoderów, koderów, itp
 
