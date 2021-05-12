@@ -91,6 +91,22 @@ ls | jq -R -s -c 'split("\n")[:-1]'
 
 Link: https://stackoverflow.com/a/32354503
 
+### Policz unikalne linie w pliku
+
+```bash
+sort /jakis/tam/plik | uniq | wc -l
+```
+
+### Sprawdź czy użytkownik istnieje
+
+```bash
+if getent passwd $user_name > /dev/null 2>&1; then
+    echo "yes the user exists"
+else
+    echo "No, the user does not exist"
+fi
+
+```
 
 ## Zarządzanie sprzętem
 
