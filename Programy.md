@@ -61,6 +61,14 @@ flameshot full --path /home/marverix/Pulpit
 
 ## Multimedia
 
+### ffmpeg
+
+#### Usuń dźwięk
+
+```sh
+ffmpeg -i $input_file -c copy -an $output_file
+```
+
 ### Fre:ac
 
 Chyba najlepszy program na Linuxa do ripowania Audio CD. Dużo opcji, dekoderów, koderów, itp
