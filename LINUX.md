@@ -108,6 +108,13 @@ fi
 
 ```
 
+### Dodaj linię na początek pliku
+
+```bash
+sed -i '1i Moja nowa linia' plik.txt
+```
+
+
 ## Zarządzanie sprzętem
 
 ### Sprawdzanie bad-sectorów
